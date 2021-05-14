@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MTG Cards</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{    
+            url_for('static',filename='mtg.css')    }}"/>
+    </head>
+    <body>
+        <div class="arena">
+            <label for="cardName">Card Name: </label>
+            <input type="text" id="cardName" name="cardName">
+            <button onclick=getCard()>Get Cards</button><br><br>
+            <label for="code">Set Code: </label>
+            <input type="text" id="code" name="code">
+            <button onclick=getSet()>Get Set</button><br>
+            <div id="results"></div>
+        </div>
+        <script src="{{    url_for('static', filename='mtg.js')    }}"></script>
+    </body>
+</html>
