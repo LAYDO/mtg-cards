@@ -1,0 +1,61 @@
+.arena {
+  margin: auto;
+  text-align: center;
+}
+.card {
+  margin: 0.5rem;
+  min-width: 16.6rem;
+  max-width: 16.6rem;
+  min-height: 23.2rem;
+  max-height: 23.2rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0.8rem;
+  padding: 0.75rem;
+}
+.card:hover {
+  /* box-shadow: 0 0.5rem 1rem 0 rgba(0, 89, 255, 0.4); */
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.color-background {
+  height: 93%;
+  border-radius: 0.4rem 0.4rem 3rem 3rem;
+  padding: 0.5rem 0;
+}
+
+.title-bar {
+  display: flex;
+  margin: auto;
+  height: 1.5rem;
+  width: 96%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: -0.125rem 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.9);
+  border-radius: 2rem / 5rem;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  vertical-align: middle;
+  width: 75%;
+  font-size: 1.1rem;
+}
+.mana-cost {
+  display: flex;
+  flex-direction: row-reverse;
+  color: black;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+  font-size: 1.1rem;
+  width: 25%;
+}
